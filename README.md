@@ -30,7 +30,7 @@ pip install pdf2image python-docx pillow numpy
 
 To use this tool:
 
-1. Open the Jupyter Notebook: `main.ipynb`
+1. Open the Jupyter Notebook: `converter.ipynb`
 2. Run all cells
 3. Change the arguments as needed in the final cell:
 
@@ -55,7 +55,7 @@ auto_crop_and_embed_to_word_fit_page(
 
 | Parameter       | Description                                                           | Default            |
 |----------------|-----------------------------------------------------------------------|--------------------|
-| `pdf_filename`  | Name of the PDF file in the `input_dir`                               | —                  |
+| `pdf_filename`  | Name of the PDF file in the `inputs/`                               | —                  |
 | `input_dir`     | Directory containing the PDF                                           | `"inputs"`         |
 | `output_dir`    | Directory to save the generated Word document                         | `"output"`         |
 | `dpi`           | Resolution for converting PDF pages to images                         | `400`              |
@@ -70,7 +70,7 @@ auto_crop_and_embed_to_word_fit_page(
 After running the function, you'll find the output in:
 
 ```
-output/your_file_autocrop.docx
+output/your_file.docx
 ```
 
 Each page in the `.docx` file corresponds to one cropped and resized PDF page.
